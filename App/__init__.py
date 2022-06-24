@@ -1,4 +1,3 @@
-from distutils.command.config import config
 import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
