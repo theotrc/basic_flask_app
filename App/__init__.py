@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 
 app = Flask(__name__)
-app.config.from_object(config)
+app.config.from_object('config')
 
 # Create database connection object
 db = SQLAlchemy(app)
