@@ -5,10 +5,14 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, login_required, current_user, logout_user
 from App import db, app
 from .models import User
+from logging import FileHandler, WARNING
+
+file_handler = FileHandler('errorlog.txt')
+file_handler.setLevel(WARNING)
+app.logger.addHandler(file_handler)
 
 @app.route("/")
 def home():
-   
     return render_template("hello.html")
 
 

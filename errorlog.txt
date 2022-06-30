@@ -1,0 +1,13 @@
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/theo/anaconda3/envs/flaskenv/lib/python3.10/site-packages/flask/app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/theo/anaconda3/envs/flaskenv/lib/python3.10/site-packages/flask/app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/theo/anaconda3/envs/flaskenv/lib/python3.10/site-packages/flask/app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/theo/anaconda3/envs/flaskenv/lib/python3.10/site-packages/flask/app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/theo/Desktop/flasktuto/basic flask/basic_flask_app/App/views.py", line 16, in home
+    n = 1/0
+ZeroDivisionError: division by zero
