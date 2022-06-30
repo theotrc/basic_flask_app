@@ -8,3 +8,7 @@ def row2dict(row, column_list=None):
             d[column] = str(getattr(row, column))
 
     return d
+
+def unitaire(n):
+    n+=1
+    return n 

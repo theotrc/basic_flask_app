@@ -1,2 +1,6 @@
+from App import utils
+
+
 def test_asertion():
-    assert True
+    n = utils.unitaire(2)
+    assert n == 3
